@@ -19,7 +19,6 @@
             overflow-x: hidden;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -56,6 +55,7 @@
             font-weight: 500;
             transition: color 0.3s;
             position: relative;
+            cursor: pointer;
         }
 
         nav a:hover {
@@ -77,7 +77,6 @@
             width: 100%;
         }
 
-        /* Page container */
         .page {
             display: none;
             min-height: 100vh;
@@ -88,7 +87,6 @@
             display: block;
         }
 
-        /* Hero Section */
         .hero {
             height: 100vh;
             display: flex;
@@ -144,6 +142,7 @@
             font-weight: bold;
             transition: transform 0.3s, box-shadow 0.3s;
             animation: fadeInUp 1s ease 0.4s backwards;
+            cursor: pointer;
         }
 
         .cta-button:hover {
@@ -162,7 +161,6 @@
             }
         }
 
-        /* Section Styles */
         section {
             padding: 5rem 10%;
             min-height: 50vh;
@@ -189,7 +187,6 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
 
-        /* About Section */
         .about-content {
             max-width: 800px;
             margin: 0 auto;
@@ -203,7 +200,6 @@
             color: #b0b0b0;
         }
 
-        /* Skills Section */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -233,7 +229,6 @@
             margin-bottom: 1rem;
         }
 
-        /* CTF and THM Pages */
         .certificates-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -291,16 +286,6 @@
             line-height: 1.6;
         }
 
-        .cert-date {
-            display: inline-block;
-            background: rgba(102, 126, 234, 0.2);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            color: #667eea;
-            margin-top: 0.5rem;
-        }
-
         .view-cert-btn {
             display: inline-block;
             margin-top: 1rem;
@@ -317,7 +302,6 @@
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
 
-        /* Stats Section for THM Page */
         .stats-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -346,11 +330,6 @@
         .stat-label {
             color: #b0b0b0;
             margin-top: 0.5rem;
-        }
-
-        /* Contact Section */
-        #contact {
-            background: rgba(15, 15, 15, 0.5);
         }
 
         .contact-content {
@@ -394,39 +373,6 @@
             color: #764ba2;
         }
 
-        /* Footer */
-        footer {
-            background: #0f0f0f;
-            color: #b0b0b0;
-            text-align: center;
-            padding: 2rem;
-            border-top: 1px solid rgba(102, 126, 234, 0.2);
-        }
-
-        /* Add Certificate Button */
-        .add-cert-placeholder {
-            background: rgba(102, 126, 234, 0.1);
-            border: 2px dashed rgba(102, 126, 234, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 300px;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .add-cert-placeholder:hover {
-            background: rgba(102, 126, 234, 0.2);
-            border-color: #667eea;
-        }
-
-        .add-cert-placeholder p {
-            color: #667eea;
-            font-size: 1.2rem;
-        }
-
-        /* TryHackMe Profile Section */
         .thm-profile-section {
             display: flex;
             align-items: center;
@@ -506,25 +452,77 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
 
-        .upload-cert-btn {
+        .article-card {
+            background: rgba(20, 20, 20, 0.8);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .article-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .article-card h3 {
+            color: #667eea;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-card p {
+            color: #b0b0b0;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .article-tag {
+            background: rgba(102, 126, 234, 0.2);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #667eea;
+        }
+
+        .article-link {
             display: inline-block;
             margin-top: 1rem;
-            padding: 0.6rem 1.5rem;
-            background: rgba(102, 126, 234, 0.3);
+            padding: 0.8rem 1.8rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            text-decoration: none;
             border-radius: 25px;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-            border: 1px solid rgba(102, 126, 234, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: 500;
         }
 
-        .upload-cert-btn:hover {
+        .article-link:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-            background: rgba(102, 126, 234, 0.5);
         }
 
-        /* Responsive */
+        .articles-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: #0f0f0f;
+            color: #b0b0b0;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid rgba(102, 126, 234, 0.2);
+        }
+
         @media (max-width: 768px) {
             nav ul {
                 gap: 1rem;
@@ -559,7 +557,6 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">Ayush Agrawal</div>
         <ul>
@@ -568,11 +565,11 @@
             <li><a href="#" onclick="showPage('skills')">Skills</a></li>
             <li><a href="#" onclick="showPage('ctf')">CTF</a></li>
             <li><a href="#" onclick="showPage('thm')">TryHackMe</a></li>
+            <li><a href="#" onclick="showPage('articles')">Articles</a></li>
             <li><a href="#" onclick="showPage('contact')">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Home Page -->
     <div id="home" class="page active">
         <section class="hero">
             <div class="hero-content">
@@ -583,7 +580,6 @@
         </section>
     </div>
 
-    <!-- About Page -->
     <div id="about" class="page">
         <section>
             <h2>About Me</h2>
@@ -594,7 +590,6 @@
         </section>
     </div>
 
-    <!-- Skills Page -->
     <div id="skills" class="page">
         <section>
             <h2>Skills</h2>
@@ -627,76 +622,64 @@
         </section>
     </div>
 
-<!-- CTF Page -->
-<div id="ctf" class="page">
-    <section>
-        <h2>CTF Competitions & Achievements</h2>
-
-        <!-- CTF Stats -->
-        <div class="stats-container">
-            <div class="stat-box">
-                <div class="stat-number">4</div>
-                <div class="stat-label">CTF Competitions</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number">DΣDSEC</div>
-                <div class="stat-label">Team Name</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number">22,382</div>
-                <div class="stat-label">Total Points</div>
-            </div>
-        </div>
-
-        <div class="certificates-grid">
-
-            <div class="cert-card">
-                <div class="cert-content">
-                    <h3>DawgCTF</h3>
-                    <p><strong>Team:</strong> DΣDSEC | <strong>Rank:</strong> 25th out of 1,220 teams</p>
-                    <p>Achieved top 2% placement with 10,700 points. Solved challenges across cryptography, web exploitation, forensics, and reverse engineering.</p>
-                    <div class="achievement-badge">🏆 Top 25</div>
+    <div id="ctf" class="page">
+        <section>
+            <h2>CTF Competitions & Achievements</h2>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">CTF Competitions</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">DΣDSEC</div>
+                    <div class="stat-label">Team Name</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">22,382</div>
+                    <div class="stat-label">Total Points</div>
                 </div>
             </div>
-
-            <div class="cert-card">
-                <div class="cert-content">
-                    <h3>Hackers Gambit</h3>
-                    <p><strong>Team:</strong> DΣDSEC | <strong>Rank:</strong> 15th out of 389 teams</p>
-                    <p>Secured top 4% placement with 8,670 points. Demonstrated exceptional problem-solving skills across diverse security challenges.</p>
-                    <div class="achievement-badge">🥇 Top 15</div>
+            <div class="certificates-grid">
+                <div class="cert-card">
+                    <div class="cert-content">
+                        <h3>DawgCTF</h3>
+                        <p><strong>Team:</strong> DΣDSEC | <strong>Rank:</strong> 25th out of 1,220 teams</p>
+                        <p>Achieved top 2% placement with 10,700 points. Solved challenges across cryptography, web exploitation, forensics, and reverse engineering.</p>
+                        <div class="achievement-badge">🏆 Top 25</div>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-content">
+                        <h3>Hackers Gambit</h3>
+                        <p><strong>Team:</strong> DΣDSEC | <strong>Rank:</strong> 15th out of 389 teams</p>
+                        <p>Secured top 4% placement with 8,670 points. Demonstrated exceptional problem-solving skills across diverse security challenges.</p>
+                        <div class="achievement-badge">🥇 Top 15</div>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-content">
+                        <h3>1753 CTF</h3>
+                        <p><strong>Team:</strong> DΣDSEC | <strong>Rank:</strong> 50th out of 603 teams</p>
+                        <p>Earned 1,300 points competing against international teams. Tackled complex security scenarios and collaborative problem-solving.</p>
+                        <div class="achievement-badge">⭐ Top 50</div>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-content">
+                        <h3>DownUnderCTF</h3>
+                        <p><strong>Team:</strong> DΣDSEC | <strong>Rank:</strong> 259th out of 1,668 teams</p>
+                        <p>Competed in one of Australia's largest CTFs with 1,712 points. Engaged with the global cybersecurity community in challenging competitions.</p>
+                        <div class="achievement-badge">🦘 Top 300</div>
+                    </div>
                 </div>
             </div>
+        </section>
+    </div>
 
-            <div class="cert-card">
-                <div class="cert-content">
-                    <h3>1753 CTF</h3>
-                    <p><strong>Team:</strong> DΣDSEC | <strong>Rank:</strong> 50th out of 603 teams</p>
-                    <p>Earned 1,300 points competing against international teams. Tackled complex security scenarios and collaborative problem-solving.</p>
-                    <div class="achievement-badge">⭐ Top 50</div>
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-content">
-                    <h3>DownUnderCTF</h3>
-                    <p><strong>Team:</strong> DΣDSEC | <strong>Rank:</strong> 259th out of 1,668 teams</p>
-                    <p>Competed in one of Australia's largest CTFs with 1,712 points. Engaged with the global cybersecurity community in challenging competitions.</p>
-                    <div class="achievement-badge">🦘 Top 300</div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-</div>
-    
-
-    <!-- TryHackMe Page -->
     <div id="thm" class="page">
         <section>
             <h2>TryHackMe Achievements</h2>
             
-            <!-- Profile Section -->
             <div class="thm-profile-section">
                 <div class="profile-image-container">
                     <img id="profileImage" src="profile photo.png" alt="Profile Picture">
@@ -729,7 +712,6 @@
                 </div>
             </div>
 
-            <!-- CTF Competitions -->
             <h3 class="subsection-title">CTF Competitions</h3>
             <div class="certificates-grid">
                 <div class="cert-card">
@@ -755,7 +737,6 @@
                 </div>
             </div>
 
-            <!-- Learning Paths -->
             <h3 class="subsection-title">Completed Learning Paths</h3>
             <div class="certificates-grid">
                 <div class="cert-card">
@@ -788,12 +769,10 @@
                         <h3>Web Fundamentals</h3>
                         <p>Completed Web Fundamentals learning path focusing on web application security, OWASP Top 10, and common web vulnerabilities.</p>
                         <br>
-
                     </div>
                 </div>
             </div>
 
-            <!-- Seasonal Events -->
             <h3 class="subsection-title">Seasonal Events</h3>
             <div class="certificates-grid">
                 <div class="cert-card">
@@ -810,7 +789,66 @@
         </section>
     </div>
 
-    <!-- Contact Page -->
+    <div id="articles" class="page">
+        <section>
+            <h2>Articles & Write-ups ✍️</h2>
+            <div class="articles-container">
+
+                <div class="article-card">
+                    <h3>Article Title 1: My DawgCTF Write-up</h3>
+                    <div class="article-meta">
+                        <span class="article-tag">CTF</span>
+                        <span class="article-tag">Web Exploitation</span>
+                    </div>
+                    <p>Enter a short description for your first article here. For example: A detailed walkthrough of the web challenges from the DawgCTF competition...</p>
+                    <a href="#" target="_blank" class="article-link">Read More</a>
+                </div>
+
+                <div class="article-card">
+                    <h3>Article Title 2: A Guide to Network Security Tools</h3>
+                    <div class="article-meta">
+                        <span class="article-tag">Networking</span>
+                        <span class="article-tag">Tools</span>
+                        <span class="article-tag">Beginner</span>
+                    </div>
+                    <p>Enter a short description for your second article here. Explain what the reader will learn from this post.</p>
+                    <a href="#" target="_blank" class="article-link">Read More</a>
+                </div>
+
+                <div class="article-card">
+                    <h3>Article Title 3: Linux for Ethical Hackers</h3>
+                    <div class="article-meta">
+                        <span class="article-tag">Linux</span>
+                        <span class="article-tag">Ethical Hacking</span>
+                    </div>
+                    <p>Enter a short description for your third article here. This could cover essential commands and configurations for penetration testers.</p>
+                    <a href="#" target="_blank" class="article-link">Read More</a>
+                </div>
+
+                <div class="article-card">
+                    <h3>Article Title 4: The OWASP Top 10 Explained</h3>
+                    <div class="article-meta">
+                        <span class="article-tag">Web Security</span>
+                        <span class="article-tag">Vulnerabilities</span>
+                    </div>
+                    <p>Enter a short description for your fourth article here. A summary of the most critical web application security risks.</p>
+                    <a href="#" target="_blank" class="article-link">Read More</a>
+                </div>
+
+                <div class="article-card">
+                    <h3>Article Title 5: My Journey to Top 1% on TryHackMe</h3>
+                    <div class="article-meta">
+                        <span class="article-tag">TryHackMe</span>
+                        <span class="article-tag">Career</span>
+                    </div>
+                    <p>Enter a short description for your fifth article here. Share your tips, learning paths, and strategies that helped you succeed.</p>
+                    <a href="#" target="_blank" class="article-link">Read More</a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    
     <div id="contact" class="page">
         <section>
             <h2>Get In Touch</h2>
@@ -834,7 +872,6 @@
         </section>
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Ayush Agrawal. All rights reserved.</p>
     </footer>
@@ -852,10 +889,10 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Smooth scrolling
+        // Smooth scrolling for anchor links (not used in single-page nav, but good practice)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                if (this.getAttribute('onclick')) return;
+                if (this.getAttribute('onclick')) return; // Let the onclick handler run
                 e.preventDefault();
             });
         });
