@@ -1,6 +1,6 @@
 # The Role of Artificial Intelligence in Cyber Crime Investigation and Digital Forensics
 
-**Author:** [Your Name]  
+**Author:** Ayush Agrawal  
 **Date:** October 2025  
 **Course:** Cyber Crime Investigation & Digital Forensics  
 **Self-Learning Based On:** TryHackMe – Web Fundamentals & Jr Penetration Tester
