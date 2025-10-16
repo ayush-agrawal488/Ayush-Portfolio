@@ -1,6 +1,6 @@
 # Applications of Artificial Intelligence in Cyber Security
 
-**Author:** [Your Name]  
+**Author:** Ayush Agrawal  
 **Date:** October 2025  
 **Course:** Cyber Security and Practices  
 **Activity:** Stage 1 – Self-Learning Assessment (MOOC)
